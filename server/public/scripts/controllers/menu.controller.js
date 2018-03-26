@@ -6,11 +6,11 @@ myApp.controller('MenuController', function ($http, $location, MenuService) {
     let wednesdayItems =[]
     let thursdayItems =[]
     let fridayItems =[]
-    vm.mondayItems = MenuService.mondayItems
-    vm.tuesdayItems = MenuService.tuesdayItems
-    vm.wednesdayItems = MenuService.wednesdayItems
-    vm.thursdayItems = MenuService.thursdayItems
-    vm.fridayMenu = MenuService.fridayMenu
+    vm.mondayItems = MenuService.monday
+    vm.tuesdayItems = MenuService.tuesday
+    vm.wednesdayItems = MenuService.wednesday
+    vm.thursdayItems = MenuService.thursday
+    vm.fridayItems = MenuService.friday
 
 
     vm.mondayMenu = function () {
