@@ -2,21 +2,17 @@
   <div class="container">
     <center id="welcome" class="lead"></center>
     <ul layout=column layout-align="space-between center" ng-controller="MenuController as mc">
-      <li>
-        <a href="#/monday">Monday</a>
-      </li>
-      <li>
-        <a href="#/tuesday">Tuesday</a>
-      </li>
-      <li>
-        <a href="#/wednesday">Wednesday</a>
-      </li>
-      <li>
-        <a href="#/thursday">Thursday</a>
-      </li>
-      <li>
-        <a href="#/friday">Friday</a>
-      </li>
+      
+        <a href="#/monday" ng-click="mc.mondayMenu()">Monday</a>
+
+        <a href="#/tuesday" ng-click="mc.tuesdayMenu()">Tuesday</a>
+
+        <a href="#/wednesday" ng-click="mc.wednesdayMenu()">Wednesday</a>
+
+        <a href="#/thursday" ng-click="mc.thursdayMenu()">Thursday</a>
+
+        <a href="#/friday" ng-click="mc.fridayMenu()">Friday</a>
+
     </ul>
   </div>
 </div>
