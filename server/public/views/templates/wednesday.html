@@ -1,21 +1,33 @@
 <div class="container" layout=column layout-align="center center">
     <div class=navbar>
-        <center>Foodsby Challange</center>
         <div ng-include="'views/partials/nav.html'"></div>
     </div>
-    <div>
-        Wednesday Items
-        <div ng-repeat="items in mc.wednesdayItems.data.data">
-        
-            <ul>
-                <li>{{mc.wednesdayItems}}</li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
+    Wednesday Items
+    <div ng-repeat="items in mc.wednesdayItems.data" class="menu">
+        <md-content class="menu" layout-xs="column" layout="row">
+            <div flex-xs flex-gt-xs="50" layout="column">
+                <md-card>
+                    <img ng-src="{{items.logoUrl}}" class="md-card-image" alt="Washed Out">
+                    <md-card-title>
+                        <md-card-title-text>
+                            <span class="md-headline">{{items.restaurantName}}</span>
+                        </md-card-title-text>
+                    </md-card-title>
+                    <md-card-actions layout="row" layout-align="start center">
+
+                        <md-card-content>
+                            <h2>Must Order By : {{items.cutoff}}</h2>
+
+                            <h2>Order Will Be Delivered At : {{items.dropoff}}</h2>
+                    </md-card-actions>
+                    <md-button class="md-raised md-primary">Select Restaurant</md-button>
+                    <p>
+                        mc.order.message
+                    </p>
+                    </md-card-content>
+                </md-card>
+            </div>
+            <md-content>
 
     </div>
 </div>

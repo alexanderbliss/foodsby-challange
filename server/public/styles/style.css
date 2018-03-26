@@ -1,0 +1,15 @@
+body {
+  background-image: "https://i.imgur.com/WP5NcTZ.jpg"
+}
+
+h3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.menu {
+justify-content: center;
+margin-left: 100px;
+margin-right: 100px;
+
+}

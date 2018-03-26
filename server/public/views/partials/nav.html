@@ -1,18 +1,20 @@
 <div class="navbar">
   <div class="container">
-    <center id="welcome" class="lead"></center>
-    <ul layout=column layout-align="space-between center" ng-controller="MenuController as mc">
-      
-        <a href="#/monday" ng-click="mc.mondayMenu()">Monday</a>
+            <h3>Foodsby Challange</h3>
 
-        <a href="#/tuesday" ng-click="mc.tuesdayMenu()">Tuesday</a>
+    <center id="welcome" class="lead"><h1>Select Day</h1></center>
 
-        <a href="#/wednesday" ng-click="mc.wednesdayMenu()">Wednesday</a>
+    <div layout=row layout-align="space-between center" ng-controller="MenuController as mc">
 
-        <a href="#/thursday" ng-click="mc.thursdayMenu()">Thursday</a>
+      <md-button class="md-raised md-primary" href="#/monday" ng-click="mc.mondayMenu()">Monday</md-button>
 
-        <a href="#/friday" ng-click="mc.fridayMenu()">Friday</a>
+      <md-button class="md-raised md-primary" href="#/tuesday" ng-click="mc.tuesdayMenu()">Tuesday</md-button>
 
-    </ul>
+      <md-button class="md-raised md-primary" href="#/wednesday" ng-click="mc.wednesdayMenu()">Wednesday</md-button>
+
+      <md-button class="md-raised md-primary" href="#/thursday" ng-click="mc.thursdayMenu()">Thursday</md-button>
+
+      <md-button class="md-raised md-primary" href="#/friday" ng-click="mc.fridayMenu()">Friday</md-button>
+      </div>
   </div>
 </div>

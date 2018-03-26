@@ -1,11 +1,6 @@
 myApp.controller('MenuController', function ($http, $location, MenuService) {
     console.log('menu controller created');
     let vm = this;
-    let mondayItems = []
-    let tuesdayItems =[]
-    let wednesdayItems =[]
-    let thursdayItems =[]
-    let fridayItems =[]
     vm.mondayItems = MenuService.monday
     vm.tuesdayItems = MenuService.tuesday
     vm.wednesdayItems = MenuService.wednesday
