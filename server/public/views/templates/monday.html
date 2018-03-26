@@ -2,32 +2,41 @@
     <div class=navbar>
         <div ng-include="'views/partials/nav.html'"></div>
     </div>
-        Monday Items
-        <div ng-repeat="items in mc.mondayItems.data" class="menu">
-<md-content class="menu" layout-xs="column" layout="row">
-    <div flex-xs flex-gt-xs="50" layout="column">
-        <md-card>
-            <img ng-src="{{items.logoUrl}}" class="md-card-image" alt="Washed Out">
-            <md-card-title>
-                <md-card-title-text>
-                    <span class="md-headline">{{items.restaurantName}}</span>
-                </md-card-title-text>
-            </md-card-title>
-            <md-card-actions layout="row" layout-align="start center">
+    Monday Items
+    <div ng-repeat="items in mc.mondayItems.data" class="menu">
+        <md-content class="menu" layout-xs="column" layout="row">
+            <div flex-xs flex-gt-xs="50" layout="column">
+                <md-card>
+                    <img ng-src="{{items.logoUrl}}" class="md-card-image" alt="Washed Out">
+                    <md-card-title>
+                        <md-card-title-text>
+                            <span class="md-headline">{{items.restaurantName}}</span>
+                        </md-card-title-text>
+                    </md-card-title>
+                    <md-card-actions layout="row" layout-align="start center">
 
-            <md-card-content>
-                                <h2>Must Order By : {{items.cutoff}}</h2>
-                                
-                                <h2>Order Will Be Delivered At : {{items.dropoff}}</h2>
-                                </md-card-actions>
-                                <md-button class="md-raised md-primary">Select Restaurant</md-button>
-                <p>
-                    mc.order.message
-                </p>
-            </md-card-content>
-        </md-card>
+                        <md-card-content>
+                            <h2>Must Order By : {{items.cutoff}}</h2>
+
+                            <h2>Order Will Be Delivered At : {{items.dropoff}}</h2>
+                    </md-card-actions>
+                    <md-button ng-show="items.canBeOrdered" class="md-raised md-primary">Select Restaurant</md-button>
+                    <p ng-show="{{items.isOrderPlaced}}">
+                        This Order Is on The Way
+                    </p>
+                    <p ng-show="{{items.isPastCutoff}}">
+                        Past Cut Off Time
+                    </p>
+                    <p ng-show="{{items.sellingOut}}">
+                        Hurry Only A Few Left
+                    </p>
+                    <p ng-show="{{items.soldOut}}">
+                        All Sold Out
+                    </p>
+                    </md-card-content>
+                </md-card>
+            </div>
+            <md-content>
+
     </div>
-    <md-content>
-
-            </div>
-            </div>
+</div>

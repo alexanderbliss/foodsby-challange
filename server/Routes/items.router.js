@@ -14,7 +14,8 @@ let mondayItems = [
         "soldOut": false,
         "sellingOut": false,
         "isPastCutoff": false,
-        "isOrderPlaced": false
+        "isOrderPlaced": false,
+        "canBeOrdered" : true
     },
     {
         "deliveryId": 2,
@@ -24,9 +25,11 @@ let mondayItems = [
         "cutoff": "9:00:00",
         "dropoff": "11:00:00",
         "soldOut": true,
-        "sellingOut": true,
+        "sellingOut": false,
         "isPastCutoff": false,
-        "isOrderPlaced": false
+        "isOrderPlaced": false,
+        "canBeOrdered": false
+
     },
     {
         "deliveryId": 3,
@@ -38,7 +41,9 @@ let mondayItems = [
         "soldOut": false,
         "sellingOut": true,
         "isPastCutoff": false,
-        "isOrderPlaced": false
+        "isOrderPlaced": false,
+                "canBeOrdered": true
+
     },
 ]
 
@@ -52,8 +57,10 @@ let tuesdayItems = [
         "dropoff": "11:30:00",
         "soldOut": false,
         "sellingOut": false,
-        "isPastCutoff": true,
-        "isOrderPlaced": true
+        "isPastCutoff": false,
+        "isOrderPlaced": true,
+        "canBeOrdered": false
+
     },
     {
         "deliveryId": 2,
@@ -65,7 +72,9 @@ let tuesdayItems = [
         "soldOut": false,
         "sellingOut": false,
         "isPastCutoff": false,
-        "isOrderPlaced": false
+        "isOrderPlaced": false,
+        "canBeOrdered": true
+
     },
     {
         "deliveryId": 3,
@@ -76,8 +85,10 @@ let tuesdayItems = [
         "dropoff": "11:30:00",
         "soldOut": false,
         "sellingOut": false,
-        "isPastCutoff": false,
-        "isOrderPlaced": true
+        "isPastCutoff": true,
+        "isOrderPlaced": false,
+                "canBeOrdered": false
+
     },
 ]
 
@@ -92,7 +103,9 @@ let wednesdayItems = [
         "soldOut": false,
         "sellingOut": false,
         "isPastCutoff": false,
-        "isOrderPlaced": false
+        "isOrderPlaced": false,
+        "canBeOrdered": true
+
     },
     {
         "deliveryId": 2,
@@ -104,7 +117,9 @@ let wednesdayItems = [
         "soldOut": true,
         "sellingOut": false,
         "isPastCutoff": false,
-        "isOrderPlaced": false
+        "isOrderPlaced": false,
+        "canBeOrdered": false
+
     },
     {
         "deliveryId": 3,
@@ -116,7 +131,9 @@ let wednesdayItems = [
         "soldOut": false,
         "sellingOut": true,
         "isPastCutoff": false,
-        "isOrderPlaced": false
+        "isOrderPlaced": false,
+                "canBeOrdered": true
+
     }
 ]
 let thursdayItems = [
@@ -130,7 +147,9 @@ let thursdayItems = [
         "soldOut": false,
         "sellingOut": false,
         "isPastCutoff": false,
-        "isOrderPlaced": true
+        "isOrderPlaced": true,
+        "canBeOrdered": false
+
     },
     {
         "deliveryId": 2,
@@ -142,7 +161,9 @@ let thursdayItems = [
         "soldOut": false,
         "sellingOut": false,
         "isPastCutoff": true,
-        "isOrderPlaced": false
+        "isOrderPlaced": false,
+        "canBeOrdered": false
+
     },
     {
         "deliveryId": 3,
@@ -154,7 +175,9 @@ let thursdayItems = [
         "soldOut": false,
         "sellingOut": false,
         "isPastCutoff": false,
-        "isOrderPlaced": false
+        "isOrderPlaced": false,
+        "canBeOrdered": true
+
     },
 ]
 let fridayItems = [
@@ -168,7 +191,9 @@ let fridayItems = [
         "soldOut": false,
         "sellingOut": true,
         "isPastCutoff": false,
-        "isOrderPlaced": false
+        "isOrderPlaced": false,
+        "canBeOrdered": true
+
     },
     {
         "deliveryId": 2,
@@ -180,7 +205,9 @@ let fridayItems = [
         "soldOut": false,
         "sellingOut": false,
         "isPastCutoff": false,
-        "isOrderPlaced": true
+        "isOrderPlaced": true,
+        "canBeOrdered": false
+
     },
     {
         "deliveryId": 3,
@@ -192,7 +219,9 @@ let fridayItems = [
         "soldOut": false,
         "sellingOut": true,
         "isPastCutoff": false,
-        "isOrderPlaced": false
+        "isOrderPlaced": false,
+        "canBeOrdered": true,
+
     },
 ]
 

@@ -20,9 +20,18 @@
 
                             <h2>Order Will Be Delivered At : {{items.dropoff}}</h2>
                     </md-card-actions>
-                    <md-button class="md-raised md-primary">Select Restaurant</md-button>
-                    <p>
-                        mc.order.message
+                    <md-button ng-show="items.canBeOrdered" class="md-raised md-primary">Select Restaurant</md-button>
+                    <p ng-show="{{items.isOrderPlaced}}">
+                        This Order Is on The Way
+                    </p>
+                    <p ng-show="{{items.isPastCutoff}}">
+                        Past Cut Off Time
+                    </p>
+                    <p ng-show="{{items.sellingOut}}">
+                        Hurry Only A Few Left
+                    </p>
+                    <p ng-show="{{items.soldOut}}">
+                        All Sold Out
                     </p>
                     </md-card-content>
                 </md-card>
